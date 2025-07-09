@@ -1,95 +1,66 @@
-# LeetCode Solutions Portfolio
+# LeetCode Solutions
 
-> Systematic algorithmic problem solving with emphasis on software design and optimal performance
+> Repositório com soluções para desafios da plataforma LeetCode, acompanhadas de análise técnica.
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![Code Style](https://img.shields.io/badge/Code%20Style-PEP%208-black.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![Commits](https://img.shields.io/badge/Commits-Conventional-blue.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## Solution Portfolio Overview
+## Visão Geral
 
-This repository represents a comprehensive collection of algorithmic solutions developed with emphasis on code quality, performance optimization, and maintainable design patterns. Each solution demonstrates mastery of fundamental computer science concepts and their practical application.
+Este repositório serve como um acervo pessoal de soluções para problemas da plataforma LeetCode. O objetivo é documentar diferentes abordagens para cada desafio e analisar suas respectivas complexidades temporal e espacial.
 
-### Progress Summary
+### Resumo do Progresso
 
-| Difficulty Level | Problems Solved | Total Available | Completion Rate |
-|------------------|-----------------|-----------------|-----------------|
-| Foundation       | 1              | 883             | 0.11%             |
-| Intermediate     | 3              | 1872             | 0.16%             |
-| Advanced         | 0               | 846              | 0%             |
-| **Portfolio Total** | **4**       | **3601**         | **0.27%**         |
+| Nível de Dificuldade | Problemas Resolvidos | Total Disponível | Taxa de Conclusão |
+|:---|:---:|:---:|:---:|
+| Fundamental | 2 | 883 | 0.23% |
+| Intermediário | 6 | 1872 | 0.32% |
+| Avançado | 1 | 846 | 0.12% |
+| **Total** | **9** | **3601** | **0.25%** |
 
-## Distinguished Solutions
+## Estrutura do Repositório
 
-### Algorithmic Excellence
-- **[Two Sum](./problems/easy/001_two_sum/)** - HashMap optimization with O(n) complexity
-- **[Add Two Numbers](./problems/medium/002_add_two_numbers/)** - Linked list arithmetic with carry propagation
-- **[Longest Substring Without Repeating Characters](./problems/medium/003_longest_substring/)** - Sliding window technique implementation
+O projeto adota uma organização modular para facilitar a navegação e a manutenção, dividida da seguinte forma:
 
-## Engineering Standards
+### Diretório de Problemas (`problems/`)
+- As soluções são agrupadas por nível de dificuldade (`easy`, `medium`, `hard`).
+- Cada subdiretório de problema contém:
+  - **`solution.py`**: Arquivo com a implementação da solução em Python 3.
+  - **`README.md`**: Documento com a análise da lógica e da complexidade.
 
-### Code Quality Assurance
-- **Adherence to PEP 8** - Python style guide compliance
-- **Comprehensive Documentation** - Detailed algorithmic explanations
-- **Type Annotations** - Complete type safety implementation
-- **Performance Analysis** - Time and space complexity evaluation
+### Diretório de Utilitários (`utils/`)
+- Centraliza código reutilizável, como estruturas de dados customizadas (`ListNode`, `TreeNode`), para garantir consistência e evitar a repetição de código entre as diferentes soluções.
 
-### Testing Methodology
-- **Unit Test Coverage** - Exhaustive test case development
-- **Edge Case Validation** - Boundary condition verification
-- **Performance Benchmarking** - Scalability assessment
-- **Memory Profiling** - Resource utilization analysis
+### Padrões Adotados
+- **Código-Fonte**: Aderência ao guia de estilo PEP 8.
+- **Histórico de Versões**: Utilização do padrão *Conventional Commits* para versionamento.
 
-## Development Environment
+## Ambiente e Execução
 
-### Prerequisites
+### Pré-requisitos
 ```bash
 Python 3.9+
-pytest for testing framework
-mypy for type checking
-black for code formatting
 ```
 
-### Execution Instructions
+### Instruções
 ```bash
-# Repository initialization
+# 1. Clone o repositório
 git clone https://github.com/c-oliveiralopes/leetcode-solutions.git
 cd leetcode-solutions
 
-# Individual solution execution
-python problems/easy/001_two_sum/solution.py
+# 2. Navegue até um problema de interesse
+cd problems/easy/009_palindrome_number/
 
-# Comprehensive testing
-python -m pytest problems/easy/001_two_sum/test_solution.py -v --coverage
-
-# Type checking
-mypy problems/easy/001_two_sum/solution.py
+# 3. Analise a documentação local (README.md) e o código (solution.py)
 ```
+---
 
-## Technical Architecture
-
-### Repository Organization
-- **Hierarchical Structure** - Problems organized by difficulty and topic
-- **Modular Design** - Reusable utilities and data structures
-- **Comprehensive Documentation** - Detailed algorithmic explanations
-- **Testing Infrastructure** - Automated validation and performance analysis
-
-### Quality Metrics
-- **Code Coverage** - Minimum 95% test coverage requirement
-- **Performance Standards** - Sub-linear time complexity where possible
-- **Memory Efficiency** - Optimal space utilization
-- **Maintainability** - Clear separation of concerns and modular design
-
-## Professional Development
-
-This portfolio demonstrates proficiency in:
-- **Algorithmic Problem Solving** - Systematic approach to complex problems
-- **Software Engineering Best Practices** - Code quality and maintainability
-- **Performance Optimization** - Efficient algorithm design and implementation
-- **Technical Communication** - Clear documentation and code comments
-
-**Repository License:** MIT License - See [LICENSE](LICENSE) for comprehensive terms and conditions.
-
-**Last Updated:** July 3rd, 2025  
-**Maintained by:** Cristiano Oliveira Lopes  
-**Technical Focus:** Algorithmic Excellence and Software Engineering Best Practices
+<p align="center">
+  <small>
+    Distribuído sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+    <br />
+    Mantido por Cristiano Oliveira Lopes &copy; 2025
+  </small>
+</p>
